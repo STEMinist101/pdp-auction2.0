@@ -59545,7 +59545,7 @@ var SearchProduct = /*#__PURE__*/function (_Component) {
         ref: this.searchText,
         name: "productSearch",
         id: "productSearch",
-        placeholder: "Find your product here. iPhone, Jacket.etc.",
+        placeholder: "Find your product here !!",
         autoComplete: "off",
         onChange: lodash_debounce_default()(this.searchItems, 1000),
         onCopy: this.handleCopyText
@@ -59732,7 +59732,7 @@ var App = /*#__PURE__*/function (_React$Component) {
     _this = _super.call.apply(_super, [this].concat(args));
 
     app_defineProperty(app_assertThisInitialized(_this), "state", {
-      pageTitle: 'Welcome to Barkley\'s Store',
+      pageTitle: 'Welcome to Paintings e-Auction',
       filteredItems: [],
       pageNumber: 0
     });
@@ -59746,7 +59746,7 @@ var App = /*#__PURE__*/function (_React$Component) {
     });
 
     app_defineProperty(app_assertThisInitialized(_this), "componentDidMount", function () {
-      document.title = 'Barkley\'s Store | Where you feel like shopping';
+      document.title = 'Arts and Creationss Store | Where you feel like shopping';
 
       _this.props.clearItems();
 
@@ -64239,7 +64239,7 @@ var Navigation = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react.createElement(NavLink, {
         to: "/",
         className: "navbar-brand"
-      }, "Barkley's"), /*#__PURE__*/react.createElement("div", {
+      }, "Arts and Creations"), /*#__PURE__*/react.createElement("div", {
         className: this.props.loading ? 'spinner-grow active' : 'spinner-grow',
         role: "status"
       }, /*#__PURE__*/react.createElement("span", {
@@ -64256,10 +64256,10 @@ var Navigation = /*#__PURE__*/function (_React$Component) {
         to: "/",
         className: "nav-link",
         exact: true
-      }, "Auction")), /*#__PURE__*/react.createElement(es_NavItem, null, /*#__PURE__*/react.createElement(NavLink, {
-        to: "/YourBids",
-        className: "nav-link"
-      }, "Your bids")), /*#__PURE__*/react.createElement(es_NavItem, null, /*#__PURE__*/react.createElement(NavLink, {
+       }, "Auction")), /*#__PURE__react.createElement(es_NavItem, null, /*#__PURE__react.createElement(NavLink, {*/
+    //       to: "/YourBids",
+    //       className: "nav-link"
+    /*   }, "Your bids")), /*#__PURE__*/react.createElement(es_NavItem, null, /*#__PURE__*/react.createElement(NavLink, {
         to: "/Dashboard",
         className: "nav-link"
       }, "Dashboard")), !this.props.auth && /*#__PURE__*/react.createElement(es_NavItem, null, /*#__PURE__*/react.createElement("a", {
@@ -64274,7 +64274,7 @@ var Navigation = /*#__PURE__*/function (_React$Component) {
         caret: true
       }, "Settings"), /*#__PURE__*/react.createElement(es_DropdownMenu, {
         right: true
-      }, this.props.auth && /*#__PURE__*/react.createElement(es_DropdownItem, null, "Hi ", this.props.auth.name), /*#__PURE__*/react.createElement(es_DropdownItem, null, "User Settings"), /*#__PURE__*/react.createElement(es_DropdownItem, null, "Theme"), /*#__PURE__*/react.createElement(es_DropdownItem, {
+      }, this.props.auth && /*#__PURE__*/react.createElement(es_DropdownItem, null, "Hi ", this.props.auth.name), /*#__PURE__*//*react.createElement(es_DropdownItem, null, "User Settings"), /*#__PURE__react.createElement(es_DropdownItem, null, "Theme"), /*#__PURE__*/react.createElement(es_DropdownItem, {
         divider: true
       }), !this.props.auth ? /*#__PURE__*/react.createElement(NavLink, {
         to: "/Login",
@@ -66319,7 +66319,7 @@ var ViewItem = /*#__PURE__*/function (_Component) {
     value: function componentDidUpdate() {
       if (this.props.item && !this.props.comments) {
         this.props.getComments(this.props.item.comments);
-        document.title = "Barkley's Store | ".concat(this.props.item.title);
+        document.title = "Arts and Creations Store | ".concat(this.props.item.title);
       }
     }
   }, {
@@ -66412,7 +66412,7 @@ var DashboardNav = function DashboardNav() {
     className: styles_Dashboard.dashboardContainer
   }, /*#__PURE__*/react.createElement("h5", {
     className: styles_Dashboard.listGroupHeader
-  }, "Barkley's Dashboard"), /*#__PURE__*/react.createElement("ul", {
+  }, "Arts and Creations Dashboard"), /*#__PURE__*/react.createElement("ul", {
     className: "list-group list-group-flush "
   }, /*#__PURE__*/react.createElement("li", {
     className: styles_Dashboard.listGroupItem
@@ -66426,10 +66426,11 @@ var DashboardNav = function DashboardNav() {
     className: styles_Dashboard.listLink
   }, "New Item")), /*#__PURE__*/react.createElement("li", {
     className: styles_Dashboard.listGroupItem
-  }, /*#__PURE__*/react.createElement(NavLink, {
+  }, /*#__PURE__*//*react.createElement(NavLink, {
     to: "/dashboard/users",
     className: styles_Dashboard.listLink
-  }, "Users"))));
+  }, "Users")*/
+  )));
 };
 
 /* harmony default export */ const Dashboard_DashboardNav = (DashboardNav);
@@ -66583,9 +66584,9 @@ var AddItem = /*#__PURE__*/function (_Component) {
         className: "col-12 col-md-10"
       }, !this.props.match.params.uuid && /*#__PURE__*/react.createElement("h2", null, "Listing a New Item ", /*#__PURE__*/react.createElement("span", {
         style: spanStyle
-      }, "on Barkley's")), this.props.item && /*#__PURE__*/react.createElement("h2", null, "Editing ", this.props.item.title, " ", /*#__PURE__*/react.createElement("span", {
+      }, "on Arts and Creations")), this.props.item && /*#__PURE__*/react.createElement("h2", null, "Editing ", this.props.item.title, " ", /*#__PURE__*/react.createElement("span", {
         style: spanStyle
-      }, "on the Barkley's")), /*#__PURE__*/react.createElement("form", {
+      }, "on Arts and Creations")), /*#__PURE__*/react.createElement("form", {
         onSubmit: this.props.match.params.uuid ? this.handleEditItem : this.handleAddItem
       }, /*#__PURE__*/react.createElement("div", {
         className: "form-group"
@@ -67310,7 +67311,7 @@ var Login = /*#__PURE__*/function (_React$Component) {
     });
 
     Login_defineProperty(Login_assertThisInitialized(_this), "componentDidMount", function () {
-      document.title = 'Barkley\'s Store | Login';
+      document.title = 'Arts and Creationss Store | Login';
 
       _this.props.clearErrors();
     });
@@ -67368,7 +67369,7 @@ var Login = /*#__PURE__*/function (_React$Component) {
         className: "col-12 col-sm-6"
       }, /*#__PURE__*/react.createElement("h2", {
         className: "text-center"
-      }, "Welcome to Barkley's"), /*#__PURE__*/react.createElement(es_Row, null, /*#__PURE__*/react.createElement("div", {
+      }, "Welcome to Arts and Creations"), /*#__PURE__*/react.createElement(es_Row, null, /*#__PURE__*/react.createElement("div", {
         className: "col-10 offset-1"
       }, /*#__PURE__*/react.createElement("img", {
         src: login_banner,
@@ -67465,7 +67466,7 @@ var Register = /*#__PURE__*/function (_React$Component) {
     });
 
     register_defineProperty(register_assertThisInitialized(_this), "componentDidMount", function () {
-      document.title = 'Barkley\'s Store | Register';
+      document.title = 'Arts and Creationss Store | Register';
 
       _this.props.clearErrors();
     });
@@ -67550,7 +67551,7 @@ var Register = /*#__PURE__*/function (_React$Component) {
         className: "col-12 col-md-6"
       }, /*#__PURE__*/react.createElement("h2", {
         className: "text-center"
-      }, "Welcome to Barkley's"), /*#__PURE__*/react.createElement(es_Row, null, /*#__PURE__*/react.createElement("div", {
+      }, "Welcome to Arts and Creations"), /*#__PURE__*/react.createElement(es_Row, null, /*#__PURE__*/react.createElement("div", {
         className: "col-10 offset-1"
       }, /*#__PURE__*/react.createElement("img", {
         src: login_banner,
