@@ -66426,10 +66426,11 @@ var DashboardNav = function DashboardNav() {
     className: styles_Dashboard.listLink
   }, "New Item")), /*#__PURE__*/react.createElement("li", {
     className: styles_Dashboard.listGroupItem
-  }, /*#__PURE__*//*react.createElement(NavLink, {
+  }, /*#__PURE__*/
+  react.createElement(NavLink, {
     to: "/dashboard/users",
     className: styles_Dashboard.listLink
-  }, "Users")*/
+  }, "Users")
   )));
 };
 
@@ -67674,22 +67675,22 @@ var User = function User(props) {
   }, "Name"), /*#__PURE__*/react.createElement("th", {
     scope: "col",
     className: "bg-pink"
-  }, "Surname"), /*#__PURE__*/react.createElement("th", {
+  }, "Surname"), /*#__PURE__react.createElement("th", {
     scope: "col",
     className: "bg-pink"
-  }, "Edit/Remove"))), /*#__PURE__*/react.createElement("tbody", null, props.users.length != 0 && props.users.map(function (user) {
+  }, "Edit/Remove")*/)), /*#__PURE__*/react.createElement("tbody", null, props.users.length != 0 && props.users.map(function (user) {
     return /*#__PURE__*/react.createElement("tr", {
       key: user._id
-    }, /*#__PURE__*/react.createElement("td", null, user.email), /*#__PURE__*/react.createElement("td", null, user.name), /*#__PURE__*/react.createElement("td", null, user.surname), /*#__PURE__*/react.createElement("td", null, /*#__PURE__*/react.createElement(NavLink, {
+    }, /*#__PURE__*/react.createElement("td", null, user.email), /*#__PURE__*/react.createElement("td", null, user.name), /*#__PURE__*/react.createElement("td", null, user.surname), /*#__PURE__*//*react.createElement("td", null, /*#__PURE__react.createElement(NavLink, {
       className: "btn btn-warning btn-sm",
       to: "/dashboard/items/edit-item/".concat(user._id)
-    }, "Edit"), /*#__PURE__*/react.createElement("button", {
+    }, "Edit"), /*#__PURE__react.createElement("button", {
       className: "btn btn-warning btn-sm ml-2"
-    }, "Reset password"), /*#__PURE__*/react.createElement("button", {
+    }, "Reset password"), /*#__PURE__react.createElement("button", {
       className: "btn btn-danger btn-sm ml-2",
       "data-uuid": user.uuid,
       "data-title": user.title
-    }, "Remove"))) // <li key={user._id}>{user.email} - {user.name} - {user.surname}</li>
+    }, "Remove"))*/) // <li key={user._id}>{user.email} - {user.name} - {user.surname}</li>
     ;
   }))))));
 };
